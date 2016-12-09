@@ -1,0 +1,33 @@
+/* Violet Spark Style Guide */
+
+/*.username{
+  color: #fff;
+  letter-spacing: 2px;
+}*/
+
+.socialMedia {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+}
+
+.twitter {
+  background-color: #1da1f2;
+}
+
+.github {
+  background-color: #333;
+}
+
+.linkedin {
+  background-color: #006fa6;
+}
+
+.email {
+  background-color: #37a84c;
+}
+
+.icon {
+  height: 100px;
+  width: 100px;
+}
