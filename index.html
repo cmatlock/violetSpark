@@ -22,12 +22,13 @@
       </button>
     </div>
 
+    <!-- Twitter Modal -->
     <div class="reveal" id="view-twitter" data-animation-in="slide-in-down" data-animation-out="slide-out-up" data-reveal>
-      <h1>Twitter Feed</h1>
-      <p>Not sure if redirect, open new window or iframe it</p>
+      <h1>Sometimes, I tweet</h1>
+      <a class="twitter-timeline" data-width="100%" data-height="100%" data-chrome="noheader nofooter" data-dnt="true" href="https://twitter.com/ookami210">Tweets by Chanel</a>
       <!-- The "X" button that closes the modal -->
       <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true"><i class="material-icons">close</i></span>
+        <span aria-hidden="true"><i class="material-icons">X</i></span>
       </button>
     </div>
 
@@ -64,37 +65,40 @@
   </p>
 
 
+
+  <!-- CONTACT ME -->
   <div class="row socialMedia">
     <div class="large-3 medium-6 small-12 columns">
       <div class="row twitter socialMedia" data-open="view-twitter" aria-controls="send-email" aria-haspopup="true" tabindex="0">
-        <div class="username small-6 columns small-centered">@ookami210</div>
+        <div class="username columns">@ookami210</div>
         <div class="columns"><img class="icon" src="gumi_matryoshka.jpg"></div>
       </div>
     </div>
 
     <div class="large-3 medium-6 small-12 columns ">
       <div class="row github socialMedia" data-open="view-github" aria-controls="send-email" aria-haspopup="true" tabindex="0">
-        <div class="username small-6 columns small-centered">cmatlock</div>
+        <div class="username columns">cmatlock</div>
         <div class="columns"><img class="icon" src="gumi_panda.jpg"></div>
       </div>
     </div>
 
     <div class="large-3 medium-6 small-12 columns">
       <div class="row linkedin socialMedia" data-open="view-linkedin" aria-controls="send-email" aria-haspopup="true" tabindex="0">
-        <div class="username small-6 columns small-centered">chanel.matlock</div>
-        <div><img class="icon" src="gumi_reset.jpeg"></div>
+        <div class="username columns">chanel.matlock</div>
+        <div class="columns"><img class="icon" src="gumi_reset.jpeg"></div>
       </div>
     </div>
 
     <div class="large-3 medium-6 small-12 columns">
       <div class="row email socialMedia" data-open="send-email" aria-controls="send-email" aria-haspopup="true" tabindex="0">
-        <div class="username small-6 columns small-centered">email me</div>
-        <div><img class="icon" src="gumi_kitty.png"></div>
+        <div class="username columns">email me</div>
+        <div class="columns"><img class="icon" src="gumi_kitty.png"></div>
       </div>
     </div>
-
   </div>
 
+
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/what-input.js"></script>
   <script src="js/vendor/foundation.js"></script>
