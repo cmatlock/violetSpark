@@ -54,11 +54,31 @@
 
     <!-- Email Modal -->
     <div class="reveal" id="send-email" data-animation-in="slide-in-down" data-animation-out="slide-out-up" data-reveal>
-      <h1>Send me an email</h1>
-      <p>What all should go here? From field, text field, send button, what else?</p>
+      <h1>Sometimes, I read email</h1>
+      <form id="send-email-form" data-abide novalidate>
+        <div data-abide-error id="send-email-error" class="alert callout" style="display:none;">
+          I'd rather you not send me mystery messages.
+        </div>
+        <div class="success callout" id="send-email-success" style="display:none;">
+          Your message has been thrown into the ether.
+        </div>
+        <label>
+          Your email address:
+          <input id="sender-email" type="email" placeholder="Email" required>
+        </label>
+        <label>
+          Subject:
+          <input id="sender-subject" type="text" placeholder="Your reason for contact" required>
+        </label>
+        <label>
+          Your words of wisdom:
+          <textarea id="sender-message" placeholder="So, whadya wanna talk about?" required></textarea>
+        </label>
+        <button class="button" type="submit" value="Submit">Submit</button>
+      </form>
       <!-- The "X" button that closes the modal -->
       <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true"><i class="material-icons">close</i></span>
+        <span aria-hidden="true"><i class="material-icons">x</i></span>
       </button>
     </div>
 
@@ -70,20 +90,20 @@
     </p>
 
     <ul>
-      <ol>Web Development, in general (This site is my first! Feel free to tell me how awful/awesome it is).</ol>
-      <ol>Nuzlocke tool</ol>
-      <ol>Simple Pokedex (web app/smartphone)</ol>
-      <ol>Digital library</ol>
-      <ol>Markov bot</ol>
+      <li>Web Development, in general (This site is my first! Feel free to tell me how awful/awesome it is).</li>
+      <li>Nuzlocke tool</li>
+      <li>Simple Pokedex (web app/smartphone)</li>
+      <li>Digital library</li>
+      <li>Markov bot</li>
     </ul>
 
     <p>
       I play far too much World of Warcraft and not enough Pokemon. I crochet, bake and do other things in my free time.
     </p>
 
-
-
+    <hr>
     <!-- CONTACT ME -->
+    <h1 style="text-align: center;">Somtimes, I do things on the Internet</h1>
     <div class="row">
       <div class="large-3 medium-6 small-12 columns">
         <div class="twitter socialMedia" data-open="view-twitter" aria-controls="send-email" aria-haspopup="true" tabindex="0">
@@ -114,13 +134,12 @@
       </div>
     </div>
 
-
     <script src="https://platform.linkedin.com/in.js" type="text/javascript"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/violetSpark.js"></script>
 
   </body>
 </html>
