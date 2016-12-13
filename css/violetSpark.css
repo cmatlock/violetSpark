@@ -1,9 +1,8 @@
 /* Violet Spark Style Guide */
 
-/*.username{
-  color: #fff;
-  letter-spacing: 2px;
-}*/
+body{
+  font-family: 'Titillium Web', sans-serif;
+}
 
 .socialMedia {
   padding: 10px;
