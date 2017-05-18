@@ -19,14 +19,13 @@ body{
   text-align: center;
   margin-bottom: 10px;
 }
-/*
-.material-icons.md-100 { font-size: 100px; }*/
 
 .icon {
   height: 100px;
 }
 
-.icon.md-100{
-  font-size: 100px;
+.material-icons.md-100{
+  /* Apparently the icons come with some padding*/
+  font-size: 94px;
   color: #FFF;
 }
