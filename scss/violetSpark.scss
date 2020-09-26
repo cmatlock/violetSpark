@@ -1,0 +1,49 @@
+$background-color: rgb(15, 14, 14);
+$text-color: rgb(207, 204, 204);
+
+$primary-color: rgb(72, 38, 114);
+$primary-color-r: rgb(47, 12, 80);
+$secondary-color: #0A5434;
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+}
+
+h1{ 
+  color: $primary-color; 
+}
+
+h3 {
+  color: $background-color;
+  background-color: $primary-color;
+  font: {
+    weight: bold;
+  }
+  padding-left: 15px;
+  border-radius: 5px 15px 15px 5px;
+}
+
+div ul {
+  list-style-type: none;
+}
+
+li{
+  &.dropdown{
+    font-weight: bold;
+    &.inactive{
+      list-style-type: '► ';
+      .dropdown-list{
+        display: none;
+      }
+    }
+    &.active{
+      list-style-type: '▼ ';
+      .dropdown-list{
+        list-style-type: disc;
+        display: block;
+      }
+    }
+    &:hover { color: $secondary-color; }
+  }
+}

@@ -1,0 +1,43 @@
+@charset "UTF-8";
+body {
+  background-color: #0f0e0e;
+  color: #cfcccc;
+}
+
+h1 {
+  color: #482672;
+}
+
+h3 {
+  color: #0f0e0e;
+  background-color: #482672;
+  font-weight: bold;
+  padding-left: 15px;
+  border-radius: 5px 15px 15px 5px;
+}
+
+div ul {
+  list-style-type: none;
+}
+
+li.dropdown {
+  font-weight: bold;
+}
+li.dropdown.inactive {
+  list-style-type: "► ";
+}
+li.dropdown.inactive .dropdown-list {
+  display: none;
+}
+li.dropdown.active {
+  list-style-type: "▼ ";
+}
+li.dropdown.active .dropdown-list {
+  list-style-type: disc;
+  display: block;
+}
+li.dropdown:hover {
+  color: #0A5434;
+}
+
+/*# sourceMappingURL=violetSpark.css.map */
