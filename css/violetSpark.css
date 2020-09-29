@@ -20,24 +20,43 @@ div ul {
   list-style-type: none;
 }
 
+li {
+  padding-left: 0.5em;
+}
+li:hover {
+  color: #c6aee4;
+}
 li.dropdown {
   font-weight: bold;
+  cursor: pointer;
 }
 li.dropdown.inactive {
-  list-style-type: "► ";
+  list-style-type: "▶";
 }
 li.dropdown.inactive .dropdown-list {
   display: none;
 }
 li.dropdown.active {
-  list-style-type: "▼ ";
+  list-style-type: "▼";
+  color: #c6aee4;
 }
 li.dropdown.active .dropdown-list {
-  list-style-type: disc;
+  list-style-type: "●";
   display: block;
+  font-weight: normal;
 }
-li.dropdown:hover {
+
+a {
   color: #0A5434;
+  font-weight: bold;
+  line-height: normal;
+}
+a:hover {
+  color: #139e62;
+}
+a::after {
+  font-size: 120%;
+  content: "⇗";
 }
 
 /*# sourceMappingURL=violetSpark.css.map */

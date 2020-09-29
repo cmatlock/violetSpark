@@ -2,8 +2,11 @@ $background-color: rgb(15, 14, 14);
 $text-color: rgb(207, 204, 204);
 
 $primary-color: rgb(72, 38, 114);
-$primary-color-r: rgb(47, 12, 80);
+$primary-color-hover: scale-color($primary-color, $lightness: 70%);
+$primary-color-active: scale-color($primary-color, $lightness: 70%);
+
 $secondary-color: #0A5434;
+$secondary-color-hover: scale-color($secondary-color, $lightness: 20%);
 
 body {
   background-color: $background-color;
@@ -29,21 +32,37 @@ div ul {
 }
 
 li{
+  padding-left: 0.5em;
+  &:hover { color: $primary-color-hover; }
   &.dropdown{
     font-weight: bold;
+    cursor: pointer;
     &.inactive{
-      list-style-type: '► ';
+      list-style-type: "\25B6"; //black triangle pointing right 
       .dropdown-list{
         display: none;
       }
     }
     &.active{
-      list-style-type: '▼ ';
+      list-style-type: "\25BC"; //black trangle pointing down
+      color: $primary-color-active;
+      
       .dropdown-list{
-        list-style-type: disc;
+        list-style-type: "\25CF"; //black circle
         display: block;
+        font-weight: normal;
       }
     }
-    &:hover { color: $secondary-color; }
+  }
+}
+
+a {
+  color: $secondary-color;
+  font-weight: bold;
+  line-height: normal;
+  &:hover{ color: $secondary-color-hover}
+  &::after{
+    font-size: 120%;
+    content: "\21D7"; //arrow pointing up-right
   }
 }
